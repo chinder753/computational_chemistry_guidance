@@ -1,13 +1,9 @@
----
-title: 计算化学相关学习资料汇总
-date: 2024-07-10 19:52:34
-tags: [量子化学, 资源]
-excerpt: 收集了一些计算化学相关的推荐资料。
----
-
 # 计算化学相关学习资料汇总
 
 排序不分先后，想到哪些就写哪些。
+
+--------------------
+--------------------
 
 ## 网络资源
 
@@ -28,8 +24,8 @@ excerpt: 收集了一些计算化学相关的推荐资料。
 - Shuoxue's BLOG: https://shuoxue-li.readthedocs.io
 - Dave Young's Chemical Topics: http://www.ccl.net/cca/documents/dyoung/topics-orig
 
-### 公众号
-- 微信公众号 量子化学
+### 微信公众号
+- 量子化学
 
 ### bilibili
 - Druid小德: https://space.bilibili.com/6073855
@@ -86,6 +82,8 @@ excerpt: 收集了一些计算化学相关的推荐资料。
 
 ### 视频
 
+有些国外的视频在bilibili上有中译版。
+
 > bilibili
 - 澎峰科技 ｜ 先进计算公益课: https://space.bilibili.com/1444176265/channel/collectiondetail?sid=605205
 - 【物理】量子力学（一、二） 台湾师范大学姚珩老师讲解: https://www.bilibili.com/video/BV1zE411b7Ff
@@ -107,8 +105,8 @@ excerpt: 收集了一些计算化学相关的推荐资料。
 - Linear Algebra Done Right: https://www.linear.axler.net/
 - Parallel Computer Architecture and Programming: http://15418.courses.cs.cmu.edu/spring2016/lectures/
 
-***
-***
+--------------------
+--------------------
 
 ## 书籍
 
@@ -119,6 +117,8 @@ excerpt: 收集了一些计算化学相关的推荐资料。
 - 链接: 优先使用doi，其次是出版社官网，再次是亚马逊和豆瓣，最次是一个相对官方稳定的网站。
 
 - ISBN: 优先考虑13位ISBN，和eISBN。一本书分多卷出版的，只写第一卷的ISBN。
+
+***
 
 ### 计算化学
 
@@ -217,6 +217,8 @@ excerpt: 收集了一些计算化学相关的推荐资料。
 - [C专家编程](https://book.douban.com/subject/2377310/): 9787115171801
 - [C++ Primer Plus](https://book.douban.com/subject/10789789/): 9787115279460
 - [The Little Schemer](https://mitpress.mit.edu/9780262560993/the-little-schemer/): 9780262560993
+- [Programming in Lua](https://www.lua.org/pil/): 9788590379867
+- [The Implementation of Lua 5.0](https://www.lua.org/doc/jucs05.pdf): -
 
 #### 计算机组成原理
 
@@ -238,7 +240,84 @@ excerpt: 收集了一些计算化学相关的推荐资料。
 #### 并行计算
 
 - [并行计算──结构.算法.编程](https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=59ce4e25ba9eb884cf81d684): 9787040337426
-
-#### 其他
-
 - [程序员的自我修养](https://book.douban.com/subject/3652388/): 9787121085116
+
+--------------------
+--------------------
+
+## 论文
+
+论文的链接使用官网链接，不使用doi的链接。后期会对现有内容进行增删，尽量只保留该领域相对基础的论文。
+
+### 密度拟合(DF, RI)
+
+- [Fast linear scaling second-order Møller-Plesset perturbation theory (MP2) using local and density fitting approximations](https://pubs.aip.org/jcp/article/118/18/8149/460655/Fast-linear-scaling-second-order-Moller-Plesset): 10.1063/1.1564816
+
+> PBC
+- [Fast periodic Gaussian density fitting by range separation](https://pubs.aip.org/jcp/article/154/13/131104/1013204/Fast-periodic-Gaussian-density-fitting-by-range): 10.1063/5.0046617
+- [Gaussian and plane-wave mixed density fitting for periodic systems](https://pubs.aip.org/jcp/article/147/16/164119/76897/Gaussian-and-plane-wave-mixed-density-fitting-for): 10.1063/1.4998644
+
+> 辅助基组
+- [Automatically generated Coulomb fitting basis sets: Design and accuracy for systems containing H to Kr](https://pubs.aip.org/jcp/article/127/7/074102/906990/Automatically-generated-Coulomb-fitting-basis-sets): 10.1063/1.2752807
+- [Automatic Generation of Auxiliary Basis Sets](https://pubs.acs.org/doi/10.1021/acs.jctc.6b01041): 10.1021/acs.jctc.6b01041
+
+### COSX
+
+- [Efficient, approximate and parallel Hartree–Fock and hybrid DFT calculations. A ‘chain-of-spheres’ algorithm for the Hartree–Fock exchange](https://linkinghub.elsevier.com/retrieve/pii/S0301010408005089): 10.1016/j.chemphys.2008.10.036
+
+### PBC HF
+
+- [Gaussian-Based Coupled-Cluster Theory for the Ground-State and Band Structure of Solids](https://pubs.acs.org/doi/10.1021/acs.jctc.7b00049): 10.1021/acs.jctc.7b00049
+
+### 组态相互作用(CI)
+
+- [A determinant based full configuration interaction program](https://linkinghub.elsevier.com/retrieve/pii/0010465589900337): 10.1016/0010-4655(89)90033-7
+- [An efficient implementation of the full-CI method using an (n–2)-electron projection space](https://www.sciencedirect.com/science/article/abs/pii/0009261489873580): 10.1016/0009-2614(89)87358-0
+
+### OF-DFT(orbital-free density functional theory)
+
+> 综述
+- [Orbital-Free Density Functional Theory: An Attractive Electronic Structure Method for Large-Scale First-Principles Simulations](https://pubs.acs.org/doi/10.1021/acs.chemrev.2c00758): 10.1021/acs.chemrev.2c00758
+
+### 激发态
+
+> 综述
+- [Single-Reference ab Initio Methods for the Calculation of Excited States of Large Molecules](https://pubs.acs.org/doi/10.1021/cr0505627): 10.1021/cr0505627
+
+> direct算法
+- [An efficient implementation of time-dependent density-functional theory for the calculation of excitation energies of large molecules](https://pubs.aip.org/jcp/article/109/19/8218/475785/An-efficient-implementation-of-time-dependent): 10.1063/1.477483
+- [A direct algorithm for self-consistent-field linear response theory and application to C60: Excitation energies, oscillator strengths, and frequency-dependent polarizabilities](https://pubs.aip.org/jcp/article/99/2/1262/688615/A-direct-algorithm-for-self-consistent-field): 10.1063/1.465370
+
+### 波函数分析
+
+> 原子电荷
+- [原子电荷计算方法的对比](https://www.whxb.pku.edu.cn/CN/10.3866/PKU.WHXB2012281): 10.3866/PKU.WHXB2012281
+  
+### XTB
+
+> GFN1-XTB
+- [A Robust and Accurate Tight-Binding Quantum Chemical Method for Structures, Vibrational Frequencies, and Noncovalent Interactions of Large Molecular Systems Parametrized for All spd-Block Elements ( Z = 1–86)](https://pubs.acs.org/doi/10.1021/acs.jctc.7b00118): 10.1021/acs.jctc.7b00118
+
+> GFN2-XTB
+- [GFN2-xTB—An Accurate and Broadly Parametrized Self-Consistent Tight-Binding Quantum Chemical Method with Multipole Electrostatics and Density-Dependent Dispersion Contributions](https://pubs.acs.org/doi/10.1021/acs.jctc.8b01176): 10.1021/acs.jctc.8b01176
+
+> GFN0-XTB
+- [A Robust Non-Self-Consistent Tight-Binding Quan- tum Chemistry Method for large Molecules](https://chemrxiv.org/engage/chemrxiv/article-details/60c742abbdbb890c7ba3851a): 10.26434/chemrxiv.8326202.v1
+
+> 综述
+- [Extended tight-binding quantum chemistry methods](https://wires.onlinelibrary.wiley.com/doi/10.1002/wcms.1493): 10.1002/wcms.1493
+
+### 拓展阅读
+
+- [Why Is Quantum Chemistry So Complicated?](https://pubs.acs.org/doi/10.1021/jacs.2c13042): 10.1021/jacs.2c13042
+- [A Perspective on Sustainable Computational Chemistry Software Development and Integration](https://pubs.acs.org/doi/10.1021/acs.jctc.3c00419): 10.1021/acs.jctc.3c00419
+- [Benchmarking Quantum Chemical Methods: Are We Heading in the Right Direction?](https://onlinelibrary.wiley.com/doi/10.1002/anie.201611308): 10.1002/anie.201611308
+- [Double Precision Is Not Needed for Many-Body Calculations: Emergent Conventional Wisdom](https://pubs.acs.org/doi/10.1021/acs.jctc.8b00321): 10.1021/acs.jctc.8b00321
+- [Quantum Chemistry: Restricted Hartree-Fock SCF Calculations Using Microsoft Excel](https://pubs.acs.org/doi/10.1021/ed085p159): 10.1021/ed085p159
+
+### 其他
+
+- [Symmetrizer: Algorithmic determination of point groups in nearly symmetric molecules](https://onlinelibrary.wiley.com/doi/10.1002/jcc.22995): 10.1002/jcc.22995
+- [An efficient implementation of Slater-Condon rules](http://arxiv.org/abs/1311.6244): 10.48550/arXiv.1311.6244
+- [The iterative calculation of a few of the lowest eigenvalues and corresponding eigenvectors of large real-symmetric matrices](https://linkinghub.elsevier.com/retrieve/pii/0021999175900650): 10.1016/0021-9991(75)90065-0
+- [A small box Fast Fourier Transformation method for fast Poisson solutions in large systems](https://linkinghub.elsevier.com/retrieve/pii/S0010465513002385): 10.1016/j.cpc.2013.07.010
