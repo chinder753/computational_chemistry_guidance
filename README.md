@@ -1,3 +1,10 @@
+---
+title: 计算化学相关学习资料汇总
+date: 2024-07-10 19:52:34
+tags: [量子化学, 资源]
+excerpt: 收集了一些计算化学相关的推荐资料。
+---
+
 # 计算化学相关学习资料汇总
 
 排序不分先后，想到哪些就写哪些。
@@ -11,6 +18,7 @@
 - 量子化学软件中文网: http://qchem.pw
 - 国内理论与计算化学科研单位: http://qchem.pw/calclink/labcn.html
 - Computational Chemistry from Laptop to HPC: https://kthpanor.github.io/echem
+- The Sherrill Group: Notes: http://vergil.chemistry.gatech.edu/notes/
 
 ### 博客
 - 思想家公社的门口: http://sobereva.com
@@ -24,49 +32,80 @@
 - 微信公众号 量子化学
 
 ### bilibili
-- bilibili Druid小德: https://space.bilibili.com/6073855
-- bilibili 3Blue1Brown: https://space.bilibili.com/88461692
-- bilibili 泰勒猫爱丽丝: https://space.bilibili.com/11008987
-- bilibili sobereva: https://space.bilibili.com/20718
-- bilibili 乐平KYXK: https://space.bilibili.com/352878483
+- Druid小德: https://space.bilibili.com/6073855
+- 3Blue1Brown: https://space.bilibili.com/88461692
+- 泰勒猫爱丽丝: https://space.bilibili.com/11008987
+- sobereva: https://space.bilibili.com/20718
+- 乐平KYXK: https://space.bilibili.com/352878483
+- StringCNU: https://space.bilibili.com/401005433
+- 陈天奇机器学习: https://space.bilibili.com/1663273796
 
 ### 知乎
-- 知乎 東雲正樹​: https://www.zhihu.com/people/Masaki.Ryuu
-- 知乎 杨知守: https://www.zhihu.com/people/yang-pao-xiao
-- 知乎 Triborg: https://www.zhihu.com/people/yongle-li-86
-- 知乎 泰勒猫爱丽丝: https://www.zhihu.com/people/tai-le-mao-99
+- 東雲正樹​: https://www.zhihu.com/people/Masaki.Ryuu
+- 杨知守: https://www.zhihu.com/people/yang-pao-xiao
+- Triborg: https://www.zhihu.com/people/yongle-li-86
+- 泰勒猫爱丽丝: https://www.zhihu.com/people/tai-le-mao-99
+- 追寻炼金师的脚步: https://www.zhihu.com/people/zhang-zhu-62-22
 
-### GitHub
+### 计算化学相关编程教程
 
-#### HF教程
+> HF教程
 - https://sites.google.com/view/caltech-ch125b/home
 - https://github.com/yangdatou/hf-tutorial
 - https://github.com/Walter-Feng/Hartree-Fock-in-CPP
 - https://gitee.com/yyzhang_2062/o2-hf
 - https://bohrium.dp.tech/notebooks/76266786918
 
-#### FCI教程
+> FCI教程
 - https://github.com/yangdatou/simplefci
 - https://github.com/Walter-Feng/Full-CI
 
-#### PIP-NN 教程
-- https://github.com/mizu-bai/PIP-NN-PyTorch-Tutorial
+> PIP-NN 教程
+- https://github.com/CQPES/cqpes-legacy
 
-#### 非绝热动力学教程
+> 非绝热动力学教程
 
 - https://github.com/John-zzh/FSSH
 
-#### 课程收集文档
+> PBC HF
 
-- https://github.com/hebrewsnabla/awesome-qc-courses
+- https://github.com/sunqm/pbchf
 
-#### 综合性仓库
+> 综合性仓库
 - https://github.com/CrawfordGroup/ProgrammingProjects
 - https://github.com/ajz34/PyCrawfordProgProj
 - https://pycrawfordprogproj.readthedocs.io/en/latest/index.html
 - https://github.com/psi4/psi4numpy
 - https://github.com/CCQC/summer-program
 - https://github.com/SeptemberMy/MQC
+- https://py-xdh.readthedocs.io/
+
+### 课程收集文档
+
+- https://github.com/hebrewsnabla/awesome-qc-courses
+
+### 视频
+
+> bilibili
+- 澎峰科技 ｜ 先进计算公益课: https://space.bilibili.com/1444176265/channel/collectiondetail?sid=605205
+- 【物理】量子力学（一、二） 台湾师范大学姚珩老师讲解: https://www.bilibili.com/video/BV1zE411b7Ff
+
+> 寇享学术
+- 群论: https://www.koushare.com/live/details/684
+- 计算物理学: https://www.koushare.com/live/details/5272
+- 2023多体计算方法讲习班: https://www.koushare.com/live/details/19411
+- 量子计算化学菁致讲习班: https://www.koushare.com/live/details/24381
+
+> YouTube
+- Garnet Chan "Matrix product states, DMRG, and tensor networks": https://youtu.be/Q8bFmV6tHBs
+- Workshop on DMRG for quantum chemistry: https://youtu.be/U96atV5Akx4
+- Nonlinear Dynamics and Chaos - Steven Strogatz, Cornell University: https://youtube.com/playlist?list=PLbN57C5Zdl6j_qJA-pARJnKsmROzPnO9V
+- Tensor Calculus: https://www.youtube.com/playlist?list=PLdgVBOaXkb9D6zw47gsrtE5XqLeRPh27_
+
+> 其他
+- DMFT-QE Symposium: https://www.simonsfoundation.org/event/dmft-qe-symposium-june-10
+- Linear Algebra Done Right: https://www.linear.axler.net/
+- Parallel Computer Architecture and Programming: http://15418.courses.cs.cmu.edu/spring2016/lectures/
 
 ***
 ***
@@ -77,9 +116,9 @@
 
 - 书名: 包括标题和副标题，不加上第几版。
 
-- 链接: 使用doi，其次是出版社官网，再次是亚马逊和豆瓣，最次是一个相对官方稳定的网站。
+- 链接: 优先使用doi，其次是出版社官网，再次是亚马逊和豆瓣，最次是一个相对官方稳定的网站。
 
-- ISBN: 优先考虑13位ISBN，和eISBN。
+- ISBN: 优先考虑13位ISBN，和eISBN。一本书分多卷出版的，只写第一卷的ISBN。
 
 ### 计算化学
 
@@ -129,6 +168,7 @@
 
 #### 量子力学
 
+- [量子力学](https://book.douban.com/subject/25954720/): 9787040396706
 - [Quantum Mechanics](https://doi.org/10.1017/9781009310598): 9781009310611
 - [Modern Quantum Mechanics](https://doi.org/10.1017/9781108587280): 9781108473224
 
@@ -198,4 +238,7 @@
 #### 并行计算
 
 - [并行计算──结构.算法.编程](https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=59ce4e25ba9eb884cf81d684): 9787040337426
+
+#### 其他
+
 - [程序员的自我修养](https://book.douban.com/subject/3652388/): 9787121085116
