@@ -2,6 +2,8 @@
 
 排序不分先后，想到哪些就写哪些。
 
+欢迎加入QQ群，[理论计算化学自学答疑](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=TpEGEOVYpS0swkrm7CoJ9n04oRHZ6pvn&authKey=712H75zzEn6cre14YKMqPWS%2B4kmo8Lfirt2zeXSouHbJmuT4Q208F%2Fx3o0wBVwD5&noverify=0&group_code=670964084)：670964084。
+
 --------------------
 --------------------
 
@@ -15,6 +17,7 @@
 - 国内理论与计算化学科研单位: http://qchem.pw/calclink/labcn.html
 - Computational Chemistry from Laptop to HPC: https://kthpanor.github.io/echem
 - The Sherrill Group: Notes: http://vergil.chemistry.gatech.edu/notes/
+- Quantum-Machine.org: http://quantum-machine.org/
 
 ### 博客
 - 思想家公社的门口: http://sobereva.com
@@ -67,6 +70,10 @@
 
 - https://github.com/sunqm/pbchf
 
+> AIMD
+
+- https://github.com/Yunting-Bu/pyaimd
+
 > 综合性仓库
 - https://github.com/CrawfordGroup/ProgrammingProjects
 - https://github.com/ajz34/PyCrawfordProgProj
@@ -105,6 +112,11 @@
 - Linear Algebra Done Right: https://www.linear.axler.net/
 - Parallel Computer Architecture and Programming: http://15418.courses.cs.cmu.edu/spring2016/lectures/
 
+### 其他
+
+- 中国程序员容易发音错误的单词: https://github.com/shimohq/chinese-programmer-wrong-pronunciation
+- Google 开源项目风格指南——中文版: https://zh-google-styleguide.readthedocs.io/en/latest/
+
 --------------------
 --------------------
 
@@ -133,11 +145,17 @@
 - [Molecular Electronic‐Structure Theory](https://onlinelibrary.wiley.com/doi/book/10.1002/9781119019572): 9781119019572
 - [量子化学：基本原理和从头计算法](https://book.sciencereading.cn/shop/book/Booksimple/show.do?id=B95B6F9EB74B094AEE053020B0A0AAD84000): 9787030192134
 - [A New Dimension to Quantum Chemistry: Analytic Derivative Methods in Ab Initio Molecular Electronic Structure Theory](https://www.amazon.com/New-Dimension-Quantum-Chemistry-International/dp/0195070283): 9780195070286
+- [Quantum Mechanics in Chemistry](https://www.amazon.com/Quantum-Mechanics-Chemistry-Dover-Books/dp/0486420035): 9780486420035
 
 > 其他
 - [Ideas of Quantum Chemistry](https://www.sciencedirect.com/book/9780444522276/ideas-of-quantum-chemistry): 9780444522276
 - [图解量子化学](https://book.douban.com/subject/3780373/): 9789571141947
 - [群论在化学中的应用](https://book.sciencereading.cn/shop/book/Booksimple/show.do?id=B935A2428494A438785673BE1DB936A5D000): 13031302
+
+#### 化学动力学
+
+- [Theories of Molecular Reaction Dynamics: The Microscopic Foundation of Chemical Kinetics](https://doi.org/10.1093/oso/9780198805014.001.0001): 9780191843129
+- [Chemical Dynamics in Condensed Phases: Relaxation, Transfer and Reactions in Condensed Molecular Systems](https://doi.org/10.1093/oso/9780198529798.001.0001): 9780191916649
 
 #### 分子动力学
 
@@ -171,6 +189,14 @@
 - [量子力学](https://book.douban.com/subject/25954720/): 9787040396706
 - [Quantum Mechanics](https://doi.org/10.1017/9781009310598): 9781009310611
 - [Modern Quantum Mechanics](https://doi.org/10.1017/9781108587280): 9781108473224
+
+#### 统计力学
+
+- [Molecular Driving Forces](https://doi.org/10.4324/9780203809075): 9780203809075
+
+#### 光谱
+
+- [Molecular Spectroscopy](https://doi.org/10.1201/9781315115214): 9781315115214
 
 ***
 
@@ -220,6 +246,10 @@
 - [Programming in Lua](https://www.lua.org/pil/): 9788590379867
 - [The Implementation of Lua 5.0](https://www.lua.org/doc/jucs05.pdf): -
 
+#### 机器学习/深度学习
+
+- [动手学深度学习](https://zh-v2.d2l.ai/): 9787115600820
+
 #### 计算机组成原理
 
 - [计算机组成与设计](https://book.douban.com/subject/26604008/): 9787111504825
@@ -240,6 +270,9 @@
 #### 并行计算
 
 - [并行计算──结构.算法.编程](https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=59ce4e25ba9eb884cf81d684): 9787040337426
+
+#### 其他
+
 - [程序员的自我修养](https://book.douban.com/subject/3652388/): 9787121085116
 
 --------------------
