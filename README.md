@@ -162,6 +162,10 @@
 - [Computer Simulation of Liquids](https://doi.org/10.1093/oso/9780198803195.002.0003): 9780198803201
 - [Numerical Simulation in Molecular Dynamics](https://link.springer.com/book/10.1007/978-3-540-68095-6): 9783540680956
 
+#### 分子反应动力学
+
+- [Molecular Reaction Dynamics](https://doi.org/10.1017/CBO9780511614125): 9780511614125
+
 #### 密度矩阵重整化群
 
 - [Density Matrix Renormalization Group (DMRG)-based Approaches in Computational Chemistry](https://doi.org/10.1016/C2020-0-01314-9): 9780323856942
@@ -347,6 +351,9 @@
 - [Benchmarking Quantum Chemical Methods: Are We Heading in the Right Direction?](https://onlinelibrary.wiley.com/doi/10.1002/anie.201611308): 10.1002/anie.201611308
 - [Double Precision Is Not Needed for Many-Body Calculations: Emergent Conventional Wisdom](https://pubs.acs.org/doi/10.1021/acs.jctc.8b00321): 10.1021/acs.jctc.8b00321
 - [Quantum Chemistry: Restricted Hartree-Fock SCF Calculations Using Microsoft Excel](https://pubs.acs.org/doi/10.1021/ed085p159): 10.1021/ed085p159
+- [Quantum chemistry, classical heuristics, and quantum advantage](https://pubs.rsc.org/en/Content/ArticleLanding/2024/FD/D4FD00141A): 10.1039/D4FD00141A
+- [Recent Advances in Wave Function-Based Methods of Molecular-Property Calculations](https://pubs.acs.org/doi/10.1021/cr2002239): 10.1021/cr2002239
+- [Low entanglement wavefunctions](https://wires.onlinelibrary.wiley.com/doi/10.1002/wcms.1095): 10.1002/wcms.1095
 
 ### 其他
 
