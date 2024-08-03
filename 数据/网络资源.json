@@ -1,0 +1,292 @@
+{
+    "论坛": {
+        "": [
+            {
+                "名称": "计算化学公社"
+                , "网站": "http://bbs.keinsci.com"
+            }
+        ]
+    }
+    , "网站": {
+        "": [
+            {
+                "名称": "量子化学软件中文网"
+                , "网址": "http://qchem.pw"
+            }
+            , {
+                "名称": "国内理论与计算化学科研单位"
+                , "网址": "http://qchem.pw/calclink/labcn.html"
+            }
+            , {
+                "名称": "Computational Chemistry from Laptop to HPC"
+                , "网址": "https://kthpanor.github.io/echem"
+            }
+            , {
+                "名称": "The Sherrill Group: Notes"
+                , "网址": "http://vergil.chemistry.gatech.edu/notes/"
+            }
+            , {
+                "名称": "Quantum-Machine.org"
+                , "网址": "http://quantum-machine.org/"
+            }
+        ]
+    }
+    , "博客": {
+        "": [
+            {
+                "名称": "思想家公社的门口"
+                , "网址": "http://sobereva.com"
+            }
+            , {
+                "名称": "Jerkwin"
+                , "网址": "https://jerkwin.github.io"
+            }
+            , {
+                "名称": "Snail Quantum Chemistry Package"
+                , "网址": "https://gschmitz.gitlab.io/snailqm"
+            }
+            , {
+                "名称": "Shuoxue's BLOG"
+                , "网址": "https://shuoxue-li.readthedocs.io"
+            }
+            , {
+                "名称": "Dave Young's Chemical Topics"
+                , "网址": "http://www.ccl.net/cca/documents/dyoung/topics-orig"
+            }
+        ]
+    }
+    , "微信公众号": {
+        "": [
+            {
+                "名称": "量子化学"
+                , "网址": ""
+            }
+        ]
+    }
+    , "bilibili": {
+        "": [
+            {
+                "名称": "Druid小德"
+                , "网址": "https://space.bilibili.com/6073855"
+            }
+            , {
+                "名称": "3Blue1Brown"
+                , "网址": "https://space.bilibili.com/88461692"
+            }
+            , {
+                "名称": "泰勒猫爱丽丝"
+                , "网址": "https://space.bilibili.com/11008987"
+            }
+            , {
+                "名称": "sobereva"
+                , "网址": "https://space.bilibili.com/20718"
+            }
+            , {
+                "名称": "乐平KYXK"
+                , "网址": "https://space.bilibili.com/352878483"
+            }
+            , {
+                "名称": "StringCNU"
+                , "网址": "https://space.bilibili.com/401005433"
+            }
+            , {
+                "名称": "陈天奇机器学习"
+                , "网址": "https://space.bilibili.com/1663273796"
+            }
+        ]
+    }
+    , "知乎": {
+        "": [
+            {
+                "名称": "東雲正樹​"
+                , "网址": "https://www.zhihu.com/people/Masaki.Ryuu"
+            }
+            , {
+                "名称": "杨知守"
+                , "网址": "https://www.zhihu.com/people/yang-pao-xiao"
+            }
+            , {
+                "名称": "Triborg"
+                , "网址": "https://www.zhihu.com/people/yongle-li-86"
+            }
+            , {
+                "名称": "泰勒猫爱丽丝"
+                , "网址": "https://www.zhihu.com/people/tai-le-mao-99"
+            }
+            , {
+                "名称": "追寻炼金师的脚步"
+                , "网址": "https://www.zhihu.com/people/zhang-zhu-62-22"
+            }
+        ]
+    }
+    , "计算化学相关编程教程": {
+        "HF教程": [
+            {
+                "名称": ""
+                , "网址": "https://sites.google.com/view/caltech-ch125b/home"
+            }
+            , {
+                "名称": ""
+                , "网址": "https://github.com/yangdatou/hf-tutorial"
+            }
+            , {
+                "名称": ""
+                , "网址": "https://github.com/Walter-Feng/Hartree-Fock-in-CPP"
+            }
+            , {
+                "名称": ""
+                , "网址": "https://gitee.com/yyzhang_2062/o2-hf"
+            }
+            , {
+                "名称": ""
+                , "网址": "https://bohrium.dp.tech/notebooks/76266786918"
+            }
+        ]
+        , "FCI教程": [
+            {
+                "名称": ""
+                , "网址": "https://github.com/yangdatou/simplefci"
+            }
+            , {
+                "名称": ""
+                , "网址": "https://github.com/Walter-Feng/Full-CI"
+            }
+        ]
+        , "PIP-NN 教程": [
+            {
+                "名称": ""
+                , "网址": "https://github.com/CQPES/cqpes-legacy"
+            }
+        ]
+        , "非绝热动力学教程": [
+            {
+                "名称": ""
+                , "网址": "https://github.com/John-zzh/FSSH"
+            }
+        ]
+        , "PBC HF": [
+            {
+                "名称": ""
+                , "网址": "https://github.com/sunqm/pbchf"
+            }
+        ]
+        , "AIMD": [
+            {
+                "名称": ""
+                , "网址": "https://github.com/Yunting-Bu/pyaimd"
+            }
+        ]
+        , "综合性仓库": [
+            {
+                "名称": ""
+                , "网址": "https://github.com/CrawfordGroup/ProgrammingProjects"
+            }
+            , {
+                "名称": ""
+                , "网址": "https://github.com/ajz34/PyCrawfordProgProj"
+            }
+            , {
+                "名称": ""
+                , "网址": "https://pycrawfordprogproj.readthedocs.io/en/latest/index.html"
+            }
+            , {
+                "名称": ""
+                , "网址": "https://github.com/psi4/psi4numpy"
+            }
+            , {
+                "名称": ""
+                , "网址": "https://github.com/CCQC/summer-program"
+            }
+            , {
+                "名称": ""
+                , "网址": "https://github.com/SeptemberMy/MQC"
+            }
+            , {
+                "名称": ""
+                , "网址": "https://py-xdh.readthedocs.io/"
+            }
+        ]
+    }
+    , "课程收集文档": {
+        "": [
+            {
+                "名称": ""
+                , "网址": "https://github.com/hebrewsnabla/awesome-qc-courses"
+            }
+        ]
+    }
+    , "视频": {
+        "bilibili": [
+            {
+                "名称": "澎峰科技 ｜ 先进计算公益课"
+                , "网址": "https://space.bilibili.com/1444176265/channel/collectiondetail?sid=605205"
+            }
+            , {
+                "名称": "【物理】量子力学（一、二） 台湾师范大学姚珩老师讲解"
+                , "网址": "https://www.bilibili.com/video/BV1zE411b7Ff"
+            }
+        ]
+        , "蔻享学术": [
+            {
+                "名称": "群论"
+                , "网址": "https://www.koushare.com/live/details/684"
+            }
+            , {
+                "名称": "计算物理学"
+                , "网址": "https://www.koushare.com/live/details/5272"
+            }
+            , {
+                "名称": "2023多体计算方法讲习班"
+                , "网址": "https://www.koushare.com/live/details/19411"
+            }
+            , {
+                "名称": "量子计算化学菁致讲习班"
+                , "网址": "https://www.koushare.com/live/details/24381"
+            }
+        ]
+        , "YouTube": [
+            {
+                "名称": "Garnet Chan \"Matrix product states, DMRG, and tensor networks\""
+                , "网址": "https://youtu.be/Q8bFmV6tHBs"
+            }
+            , {
+                "名称": "Workshop on DMRG for quantum chemistry"
+                , "网址": "https://youtu.be/U96atV5Akx4"
+            }
+            , {
+                "名称": "Nonlinear Dynamics and Chaos - Steven Strogatz, Cornell University"
+                , "网址": "https://youtube.com/playlist?list=PLbN57C5Zdl6j_qJA-pARJnKsmROzPnO9V"
+            }
+            , {
+                "名称": "Tensor Calculus"
+                , "网址": "https://www.youtube.com/playlist?list=PLdgVBOaXkb9D6zw47gsrtE5XqLeRPh27_"
+            }
+        ]
+        , "其他": [
+            {
+                "名称": "DMFT-QE Symposium"
+                , "网址": "https://www.simonsfoundation.org/event/dmft-qe-symposium-june-10"
+            }
+            , {
+                "名称": "Linear Algebra Done Right"
+                , "网址": "https://www.linear.axler.net/"
+            }
+            , {
+                "名称": "Parallel Computer Architecture and Programming"
+                , "网址": "http://15418.courses.cs.cmu.edu/spring2016/lectures/"
+            }
+        ]
+    }
+    , "其他": {
+        "": [
+            {
+                "名称": "中国程序员容易发音错误的单词"
+                , "网址": "https://github.com/shimohq/chinese-programmer-wrong-pronunciation"
+            }
+            , {
+                "名称": "Google 开源项目风格指南——中文版"
+                , "网址": "https://zh-google-styleguide.readthedocs.io/en/latest/"
+            }
+        ]
+    }
+}

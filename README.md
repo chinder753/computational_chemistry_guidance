@@ -1,6 +1,6 @@
 # 计算化学相关学习资料汇总
 
-排序不分先后，想到哪些就写哪些。
+排序不分先后，本文内容尽量使用中文。
 
 欢迎加入QQ群，[理论计算化学自学答疑](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=TpEGEOVYpS0swkrm7CoJ9n04oRHZ6pvn&authKey=712H75zzEn6cre14YKMqPWS%2B4kmo8Lfirt2zeXSouHbJmuT4Q208F%2Fx3o0wBVwD5&noverify=0&group_code=670964084)：670964084。
 
@@ -95,7 +95,7 @@
 - 澎峰科技 ｜ 先进计算公益课: https://space.bilibili.com/1444176265/channel/collectiondetail?sid=605205
 - 【物理】量子力学（一、二） 台湾师范大学姚珩老师讲解: https://www.bilibili.com/video/BV1zE411b7Ff
 
-> 寇享学术
+> 蔻享学术
 - 群论: https://www.koushare.com/live/details/684
 - 计算物理学: https://www.koushare.com/live/details/5272
 - 2023多体计算方法讲习班: https://www.koushare.com/live/details/19411
@@ -121,14 +121,6 @@
 --------------------
 
 ## 书籍
-
-一个图书条目包含三个信息，书名、链接、ISBN。
-
-- 书名: 包括标题和副标题，不加上第几版。
-
-- 链接: 优先使用doi，其次是出版社官网，再次是亚马逊和豆瓣，最次是一个相对官方稳定的网站。
-
-- ISBN: 优先考虑13位ISBN，和eISBN。一本书分多卷出版的，只写第一卷的ISBN。
 
 ***
 
@@ -361,3 +353,107 @@
 - [An efficient implementation of Slater-Condon rules](http://arxiv.org/abs/1311.6244): 10.48550/arXiv.1311.6244
 - [The iterative calculation of a few of the lowest eigenvalues and corresponding eigenvectors of large real-symmetric matrices](https://linkinghub.elsevier.com/retrieve/pii/0021999175900650): 10.1016/0021-9991(75)90065-0
 - [A small box Fast Fourier Transformation method for fast Poisson solutions in large systems](https://linkinghub.elsevier.com/retrieve/pii/S0010465513002385): 10.1016/j.cpc.2013.07.010
+- [notes on Generalized Configuration-Interaction in python](https://chemrxiv.org/engage/chemrxiv/article-details/651592aca69febde9ed8d6a6): 10.26434/chemrxiv-2023-9gch7
+
+--------------------
+--------------------
+
+## 路线图
+
+- [ ] 目录。
+- [ ] 为论文板块制作json文件。
+- [ ] 筛选掉一些难度较大的论文，本文中只留下相对基础的，另外再新建一个仓库/md文件收集所有论文。
+- [ ] python自动根据json文件生成markdown。
+- [ ] 完善已有的json格式，如为各级分类添加段落用于说明等。
+- [ ] 上传书籍和论文的资源。
+
+--------------------
+--------------------
+
+## 如何贡献
+
+### 网络资源
+
+json模板
+
+``` json
+{
+    "<分类>": {
+        "<注释>": [
+            {
+                "名称": "<名称>"
+                , "网址": "<网址>"
+            }
+        ]
+    }
+}
+```
+
+将以上json转换为markdown，即
+
+``` markdown
+### <分类>
+
+> <注释>
+- <名称>: <网址>
+```
+
+如果<注释> == ""，则转换为
+
+``` markdown
+### <分类>
+
+- <名称>: <网址>
+```
+
+如果<名称> == ""或<网址> == ""，则转换为
+
+``` markdown
+### <分类>
+
+> <注释>
+- <网址和名称中不等于""的那一个>
+```
+
+### 书籍
+
+一个图书条目包含三个信息，书名、链接、ISBN。
+
+- 书名: 包括标题和副标题，不加上第几版。
+
+- 链接: 优先使用doi，其次是出版社官网，再次是亚马逊和豆瓣，最次是一个相对官方稳定的网站。
+
+- ISBN: 优先考虑13位ISBN，和eISBN。一本书分多卷出版的，只写第一卷的ISBN。
+
+json模板：
+
+``` json
+{
+    "<一级分类>": {
+        "<二级分类>": {
+            "<注释>": [
+                {
+                    "书名": "<书名>"
+                    , "网址": "<网址>"
+                    , "ISBN": "<ISBN>"
+                }
+            ]
+        }
+    }
+}
+```
+
+将以上json模板转换为markdown，即
+
+``` markdown
+### <一级分类>
+
+#### <二级分类>
+
+> <注释>
+- [<书名>](<网址>): <ISBN>
+```
+
+如果<注释> == ""，按照类似于[网络资源](#网络资源-1)的方式处理。
+
+

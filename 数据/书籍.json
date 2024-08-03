@@ -1,0 +1,341 @@
+{
+    "计算化学": {
+        "量子化学": {
+            "入门": [
+                {
+                    "书名": "Modern Quantum Chemistry: Introduction to Advanced Electronic Structure Theory"
+                    , "网址": "https://www.amazon.com/Modern-Quantum-Chemistry-Introduction-Electronic/dp/0486691861"
+                    , "ISBN": "9780486691862"
+                }
+                , {
+                    "书名": "现代量子化学导论"
+                    , "网址": "https://www.pup.cn/bookDetail?name=%25E7%258E%25B0%25E4%25BB%25A3%25E9%2587%258F%25E5%25AD%2590%25E5%258C%2596%25E5%25AD%25A6%25E5%25AF%25BC%25E8%25AE%25BA&id=3626be1078cb4217b8f735e3ac45b26d&0.37333759270747957"
+                    , "ISBN": "9787301336069"
+                }
+                , {
+                    "书名": "Quantum Chemistry"
+                    , "网址": "https://www.amazon.com/Quantum-Chemistry-7th-Ira-Levine/dp/0321803450"
+                    , "ISBN": "9780321803450"
+                }
+            ]
+            , "工具书": [
+                {
+                    "书名": "Molecular Electronic‐Structure Theory"
+                    , "网址": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119019572"
+                    , "ISBN": "9781119019572"
+                }
+                , {
+                    "书名": "A New Dimension to Quantum Chemistry: Analytic Derivative Methods in Ab Initio Molecular Electronic Structure Theory"
+                    , "网址": "https://www.amazon.com/New-Dimension-Quantum-Chemistry-International/dp/0195070283"
+                    , "ISBN": "9780195070286"
+                }
+            ]
+            , "其他": [
+                {
+                    "书名": "Ideas of Quantum Chemistry"
+                    , "网址": "https://www.sciencedirect.com/book/9780444522276/ideas-of-quantum-chemistry"
+                    , "ISBN": "9780444522276"
+                }
+                , {
+                    "书名": "图解量子化学"
+                    , "网址": "https://book.douban.com/subject/3780373/"
+                    , "ISBN": "9789571141947"
+                }
+                , {
+                    "书名": "群论在化学中的应用"
+                    , "网址": "https://book.sciencereading.cn/shop/book/Booksimple/show.do?id=B935A2428494A438785673BE1DB936A5D000"
+                    , "ISBN": "13031302"
+                }
+            ]
+        },
+        "化学动力学": {
+            "": [
+                {
+                    "书名": "Theories of Molecular Reaction Dynamics: The Microscopic Foundation of Chemical Kinetics"
+                    , "网址": "https://doi.org/10.1093/oso/9780198805014.001.0001"
+                    , "ISBN": "9780191843129"
+                }
+                , {
+                    "书名": "Chemical Dynamics in Condensed Phases: Relaxation, Transfer and Reactions in Condensed Molecular Systems"
+                    , "网址": "https://doi.org/10.1093/oso/9780198529798.001.0001"
+                    , "ISBN": "9780191916649"
+                }
+            ]
+        }
+        , "分子动力学": {
+            "": [
+                {
+                    "书名": "Computer Simulation of Liquids"
+                    , "网址": "https://doi.org/10.1093/oso/9780198803195.002.0003"
+                    , "ISBN": "9780198803201"
+                }
+                , {
+                    "书名": "Numerical Simulation in Molecular Dynamics"
+                    , "网址": "https://link.springer.com/book/10.1007/978-3-540-68095-6"
+                    , "ISBN": "9783540680956"
+                }
+            ]
+        }
+        , "分子反应动力学": {
+            "": [
+                {
+                    "书名": "Molecular Reaction Dynamics"
+                    , "网址": "https://doi.org/10.1017/CBO9780511614125"
+                    , "ISBN": "9780511614125"
+                }
+            ]
+        }
+        , "密度矩阵重整化群": {
+            "": [
+                {
+                    "书名": "Density Matrix Renormalization Group (DMRG)-based Approaches in Computational Chemistry"
+                    , "网址": "https://doi.org/10.1016/C2020-0-01314-9"
+                    , "ISBN": "9780323856942"
+                }
+            ]
+        }
+        , "酉群": {
+            "": [
+                {
+                    "书名": "酉群方法的理论和应用"
+                    , "网址": "http://hn.sslibrary.com/showbook.do?dxNumber=10073665&d=95510B1B7FF6B872588DECC19B4160B5&fFenleiID=0O105020"
+                    , "ISBN": "7532332748"
+                }
+            ]
+        }
+    }
+    , "物理": {
+        "固体物理": {
+            "": [
+                {
+                    "书名": "固体理论"
+                    , "网址": "https://book.douban.com/subject/1536054/"
+                    , "ISBN": "9787040115765"
+                }
+                , {
+                    "书名": "固体物理基础"
+                    , "网址": "https://book.douban.com/subject/6537306/"
+                    , "ISBN": "9787301188637"
+                }
+            ]
+        }
+        , "计算物理学": {
+            "": [
+                {
+                    "书名": "计算物理学"
+                    , "网址": "https://book.sciencereading.cn/shop/book/Booksimple/show.do?id=BAAFB83F2B70345718DE966B89863E996000"
+                    , "ISBN": "7030089138"
+                }
+                , {
+                    "书名": "Computational Quantum Mechanics"
+                    , "网址": "https://doi.org/10.1007/978-3-319-99930-2"
+                    , "ISBN": "9783319999302"
+                }
+            ]
+        }
+        , "量子力学": {
+            "": [
+                {
+                    "书名": "量子力学"
+                    , "网址": "https://book.douban.com/subject/25954720/"
+                    , "ISBN": "9787040396706"
+                }
+            ]
+        }
+        , "统计力学": {
+            "": [
+                {
+                    "书名": "Molecular Driving Forces"
+                    , "网址": "https://doi.org/10.4324/9780203809075"
+                    , "ISBN": "9780203809075"
+                }
+            ]
+        }
+        , "光谱": {
+            "": [
+                {
+                    "书名": "Molecular Spectroscopy"
+                    , "网址": "https://doi.org/10.1201/9781315115214"
+                    , "ISBN": "9781315115214"
+                }
+            ]
+        }
+    }
+    , "数学": {
+        "线性代数": {
+            "": [
+                {
+                    "书名": "Linear Algebra Done Right"
+                    , "网址": "https://link.springer.com/book/10.1007/978-3-319-11080-6"
+                    , "ISBN": "9783319110806"
+                }
+            ]
+        }
+        , "动力学": {
+            "": [
+                {
+                    "书名": "非线性动力学与混沌"
+                    , "网址": "https://book.douban.com/subject/27049323/"
+                    , "ISBN": "9787111548942"
+                }
+            ]
+        }
+        , "数学物理方法": {
+            "": [
+                {
+                    "书名": "数学物理方法"
+                    , "网址": "https://book.douban.com/subject/10517521/"
+                    , "ISBN": "9787030330642"
+                }
+                , {
+                    "书名": "物理学中的数学方法"
+                    , "网址": "https://book.sciencereading.cn/shop/book/Booksimple/show.do?id=B699EF4FD627747B486BD525CD2BB01CC000"
+                    , "ISBN": "9787030367884"
+                }
+                , {
+                    "书名": "物理学家用微分几何"
+                    , "网址": "https://book.sciencereading.cn/shop/book/Booksimple/show.do?id=BB20CC7BEFC404DBDAEBE91BE88D8366B000"
+                    , "ISBN": "703013432X"
+                }
+            ]
+        }
+        , "计算几何": {
+            "": [
+                {
+                    "书名": "计算几何导论"
+                    , "网址": "https://book.sciencereading.cn/shop/book/Booksimple/show.do?id=BCF5684E84FBD4EAB8305CB3D63F2B4CB000"
+                    , "ISBN": "7030018362"
+                }
+            ]
+        }
+    }
+    , "算法": {
+        "矩阵计算": {
+            "": [
+                {
+                    "书名": "Matrix Computations"
+                    , "网址": "https://epubs.siam.org/doi/book/10.1137/1.9781421407944"
+                    , "ISBN": "9781421407944"
+                }
+            ]
+        }
+        , "数值计算": {
+            "": [
+                {
+                    "书名": "Numerical recipes in C: The art of scientific computing"
+                    , "网址": "https://doi.org/10.1016/0160-9327(93)90069-F"
+                    , "ISBN": "0521431085"
+                }
+            ]
+        }
+    }
+    , "计算机": {
+        "编程语言": {
+            "": [
+                {
+                    "书名": "C和指针"
+                    , "网址": "https://book.douban.com/subject/35216781/"
+                    , "ISBN": "9787115522689"
+                }
+                , {
+                    "书名": "C陷阱与缺陷"
+                    , "网址": "https://book.douban.com/subject/35184066/"
+                    , "ISBN": "9787115521279"
+                }
+                , {
+                    "书名": "C专家编程"
+                    , "网址": "https://book.douban.com/subject/2377310/"
+                    , "ISBN": "9787115171801"
+                }
+                , {
+                    "书名": "C++ Primer Plus"
+                    , "网址": "https://book.douban.com/subject/10789789/"
+                    , "ISBN": "9787115279460"
+                }
+                , {
+                    "书名": "The Little Schemer"
+                    , "网址": "https://mitpress.mit.edu/9780262560993/the-little-schemer/"
+                    , "ISBN": "9780262560993"
+                }
+                , {
+                    "书名": "Programming in Lua"
+                    , "网址": "https://www.lua.org/pil/"
+                    , "ISBN": "9788590379867"
+                }
+                , {
+                    "书名": "The Implementation of Lua 5.0"
+                    , "网址": "https://www.lua.org/doc/jucs05.pdf"
+                    , "ISBN": "-"
+                }
+            ]
+        }
+        , "机器学习": {
+            "": [
+                {
+                    "书名": "动手学深度学习"
+                    , "网址": "https://zh-v2.d2l.ai/"
+                    , "ISBN": "9787115600820"
+                }
+            ]
+        }
+        , "计算机组成原理": {
+            "": [
+                {
+                    "书名": "计算机组成与设计"
+                    , "网址": "https://book.douban.com/subject/26604008/"
+                    , "ISBN": "9787111504825"
+                }
+                , {
+                    "书名": "计算机程序的构造和解释"
+                    , "网址": "https://book.douban.com/subject/34464721/"
+                    , "ISBN": "9787111630548"
+                }
+            ]
+        }
+        , "编译原理": {
+            "": [
+                {
+                    "书名": "编译原理"
+                    , "网址": "https://book.douban.com/subject/3774682/"
+                    , "ISBN": "9787111269298"
+                }
+            ]
+        }
+        , "图像处理": {
+            "": [
+                {
+                    "书名": "Image Processing for Embedded Devices"
+                    , "网址": "https://doi.org/10.2174/97816080517001100101"
+                    , "ISBN": "9781608051700"
+                }
+            ]
+        }
+        , "数字信号处理": {
+            "": [
+                {
+                    "书名": "Essentials of Digital Signal Processing"
+                    , "网址": "https://www.cambridge.org/highereducation/books/essentials-of-digital-signal-processing/0401720BCE4A0972DED8DCF801042EB6#overview"
+                    , "ISBN": "9781107059320"
+                }
+            ]
+        }
+        , "并行计算": {
+            "": [
+                {
+                    "书名": "并行计算──结构.算法.编程"
+                    , "网址": "https://xuanshu.hep.com.cn/front/book/findBookDetails?bookId=59ce4e25ba9eb884cf81d684"
+                    , "ISBN": "9787040337426"
+                }
+            ]
+        }
+        , "其他": {
+            "": [
+                {
+                    "书名": "程序员的自我修养"
+                    , "网址": "https://book.douban.com/subject/3652388/"
+                    , "ISBN": "9787121085116"
+                }
+            ]
+        }
+    }
+}
