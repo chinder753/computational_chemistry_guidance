@@ -18,6 +18,7 @@
 - Computational Chemistry from Laptop to HPC: https://kthpanor.github.io/echem
 - The Sherrill Group: Notes: http://vergil.chemistry.gatech.edu/notes/
 - Quantum-Machine.org: http://quantum-machine.org/
+- Tensor Network: https://tensornetwork.org/
 
 ### 博客
 - 思想家公社的门口: http://sobereva.com
@@ -143,6 +144,7 @@
 - [Ideas of Quantum Chemistry](https://www.sciencedirect.com/book/9780444522276/ideas-of-quantum-chemistry): 9780444522276
 - [图解量子化学](https://book.douban.com/subject/3780373/): 9789571141947
 - [群论在化学中的应用](https://book.sciencereading.cn/shop/book/Booksimple/show.do?id=B935A2428494A438785673BE1DB936A5D000): 13031302
+- [Quantum Chemistry and Dynamics of Excited States](https://doi.org/10.1002/9781119417774): 9781119417774
 
 #### 化学动力学
 
@@ -179,6 +181,9 @@
 
 - [计算物理学](https://book.sciencereading.cn/shop/book/Booksimple/show.do?id=BAAFB83F2B70345718DE966B89863E996000): 7030089138
 - [Computational Quantum Mechanics](https://doi.org/10.1007/978-3-319-99930-2): 9783319999302
+- [Computational physics](
+https://doi.org/10.1017/CBO9781139171397): 
+9781139171397
 
 #### 量子力学
 
@@ -215,6 +220,7 @@
 #### 计算几何
 
 - [计算几何导论](https://book.sciencereading.cn/shop/book/Booksimple/show.do?id=BCF5684E84FBD4EAB8305CB3D63F2B4CB000): 7030018362
+- [Handbook of Discrete and Computational Geometry](https://www.csun.edu/~ctoth/Handbook/HDCG3.html): 9781498711395 
 
 ***
 
@@ -294,7 +300,7 @@
 
 - [Efficient, approximate and parallel Hartree–Fock and hybrid DFT calculations. A ‘chain-of-spheres’ algorithm for the Hartree–Fock exchange](https://linkinghub.elsevier.com/retrieve/pii/S0301010408005089): 10.1016/j.chemphys.2008.10.036
 
-### PBC HF
+### 周期性边界条件波函数方法
 
 - [Gaussian-Based Coupled-Cluster Theory for the Ground-State and Band Structure of Solids](https://pubs.acs.org/doi/10.1021/acs.jctc.7b00049): 10.1021/acs.jctc.7b00049
 
@@ -302,6 +308,9 @@
 
 - [A determinant based full configuration interaction program](https://linkinghub.elsevier.com/retrieve/pii/0010465589900337): 10.1016/0010-4655(89)90033-7
 - [An efficient implementation of the full-CI method using an (n–2)-electron projection space](https://www.sciencedirect.com/science/article/abs/pii/0009261489873580): 10.1016/0009-2614(89)87358-0
+- [A vector and parallel full configuration interaction algorithm](https://pubs.aip.org/jcp/article/98/4/3141/980306/A-vector-and-parallel-full-configuration): 10.1063/1.464087
+- [Determinant based configuration interaction algorithms for complete and restricted configuration interaction spaces](https://pubs.aip.org/jcp/article/89/4/2185/95039/Determinant-based-configuration-interaction): 10.1063/1.455063
+- [notes on Generalized Configuration-Interaction in python](https://chemrxiv.org/engage/chemrxiv/article-details/651592aca69febde9ed8d6a6): 10.26434/chemrxiv-2023-9gch7
 
 ### OF-DFT(orbital-free density functional theory)
 
