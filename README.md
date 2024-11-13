@@ -75,6 +75,11 @@
 
 - https://github.com/Yunting-Bu/pyaimd
 
+> DVR
+
+- https://github.com/Yunting-Bu/FBR-and-DVR
+- https://github.com/yangjunjie0320/DiscreteVariableRepresentation.jl
+
 > 综合性仓库
 - https://github.com/CrawfordGroup/ProgrammingProjects
 - https://github.com/ajz34/PyCrawfordProgProj
@@ -83,6 +88,7 @@
 - https://github.com/CCQC/summer-program
 - https://github.com/SeptemberMy/MQC
 - https://py-xdh.readthedocs.io/
+- https://github.com/Yxwxwx/Model
 
 ### 课程收集文档
 
@@ -145,6 +151,7 @@
 - [图解量子化学](https://book.douban.com/subject/3780373/): 9789571141947
 - [群论在化学中的应用](https://book.sciencereading.cn/shop/book/Booksimple/show.do?id=B935A2428494A438785673BE1DB936A5D000): 13031302
 - [Quantum Chemistry and Dynamics of Excited States](https://doi.org/10.1002/9781119417774): 9781119417774
+- [Molecular Vibrations: The Theory of Infrared and Raman Vibrational Spectra](https://www.amazon.com/Molecular-Vibrations-Infrared-Vibrational-Chemistry-ebook/dp/B00B78IWZE): 9780486639413
 
 #### 化学动力学
 
@@ -221,6 +228,11 @@ https://doi.org/10.1017/CBO9781139171397):
 
 - [计算几何导论](https://book.sciencereading.cn/shop/book/Booksimple/show.do?id=BCF5684E84FBD4EAB8305CB3D63F2B4CB000): 7030018362
 - [Handbook of Discrete and Computational Geometry](https://www.csun.edu/~ctoth/Handbook/HDCG3.html): 9781498711395 
+
+#### 数值优化
+
+- [最优化理论与方法](https://doi.org/10.1149/1.2430134): 703005413X
+- [Numerical Optimization](https://doi.org/10.1007/978-0-387-40065-5): 9780387400655
 
 ***
 
@@ -345,6 +357,35 @@ https://doi.org/10.1017/CBO9781139171397):
 > 综述
 - [Extended tight-binding quantum chemistry methods](https://wires.onlinelibrary.wiley.com/doi/10.1002/wcms.1493): 10.1002/wcms.1493
 
+### 内坐标
+
+> 自然内坐标
+- [Systematic ab initio gradient calculation of molecular geometries, force constants, and dipole moment derivatives](https://pubs.acs.org/doi/abs/10.1021/ja00504a009): 10.1021/ja00504a009
+- [The calculation of ab initio molecular geometries: efficient optimization by natural internal coordinates and empirical correction by offset forces](https://pubs.acs.org/doi/abs/10.1021/ja00047a032): 10.1021/ja00047a032
+- [Geometry optimization in redundant internal coordinates](https://pubs.aip.org/jcp/article/96/4/2856/223659/Geometry-optimization-in-redundant-internal): 10.1063/1.462844
+
+> 冗余内坐标
+- [Using redundant internal coordinates to optimize equilibrium geometries and transition states](https://onlinelibrary.wiley.com/doi/10.1002/(SICI)1096-987X(19960115)17:1<49::AID-JCC5>3.0.CO;2-0): 10.1002/(SICI)1096-987X(19960115)17:1<49::AID-JCC5>3.0.CO;2-0
+- [The efficient optimization of molecular geometries using redundant internal coordinates](https://pubs.aip.org/jcp/article/117/20/9160/464558/The-efficient-optimization-of-molecular-geometries): 10.1063/1.1515483
+
+> Delocalized Internal Coordinates
+- [The generation and use of delocalized internal coordinates in geometry optimization](https://pubs.aip.org/jcp/article/105/1/192/180166/The-generation-and-use-of-delocalized-internal): 10.1063/1.471864
+
+> Hybrid Delocalised Internal Coordinates
+- [Linear scaling geometry optimisation and transition state search in hybrid delocalised internal coordinates](https://xlink.rsc.org/?DOI=a909486e): 10.1039/a909486e
+
+> Translation and Rotation Internal Coordinates
+- [Geometry optimization made simple with translation and rotation coordinates](https://pubs.aip.org/jcp/article/144/21/214108/313176/Geometry-optimization-made-simple-with-translation): 10.1063/1.4952956
+
+### 结构优化/过渡态搜索
+
+- [Geometry optimization in redundant internal coordinates](https://pubs.aip.org/jcp/article/96/4/2856/223659/Geometry-optimization-in-redundant-internal): 10.1063/1.462844
+- [Optimization of equilibrium geometries and transition structures](https://onlinelibrary.wiley.com/doi/10.1002/jcc.540030212): 10.1002/jcc.540030212
+- [An algorithm for the location of transition states](https://onlinelibrary.wiley.com/doi/10.1002/jcc.540070402): 10.1002/jcc.540070402
+- [Locating transition states](https://pubs.aip.org/jcp/article/80/6/2464/154271/Locating-transition-statesLocating-transition): 10.1063/1.446996
+- [On finding transition states](https://pubs.aip.org/jcp/article/75/6/2800/791398/On-finding-transition-states): 10.1063/1.442352
+- [Search for stationary points on surfaces](https://pubs.acs.org/doi/abs/10.1021/j100247a015): 10.1021/j100247a015
+
 ### 拓展阅读
 
 - [Why Is Quantum Chemistry So Complicated?](https://pubs.acs.org/doi/10.1021/jacs.2c13042): 10.1021/jacs.2c13042
@@ -380,6 +421,8 @@ https://doi.org/10.1017/CBO9781139171397):
 --------------------
 
 ## 如何贡献
+
+> 目前打算重新设计数据的储存，以XML为基础，请勿按照以下格式提交新的数据
 
 ### 网络资源
 
