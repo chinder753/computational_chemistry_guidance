@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>计算化学相关学习资料收集</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body>
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="主页" data-bs-toggle="tab" data-bs-target="#nav-主页" type="button"
+                role="tab" aria-controls="nav-主页" aria-selected="true">主页</button>
+            <button class="nav-link" id="网络资源" data-bs-toggle="tab" data-bs-target="#nav-网络资源" type="button" role="tab"
+                aria-controls="nav-网络资源" aria-selected="true">网络资源</button>
+            <button class="nav-link" id="书籍" data-bs-toggle="tab" data-bs-target="#nav-书籍" type="button" role="tab"
+                aria-controls="nav-书籍" aria-selected="false">书籍</button>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-主页" role="tabpanel" aria-labelledby="主页" tabindex="0">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col" style="margin-top: 5%;">
+                        <p>排序不分先后</p>
+                        <p>欢迎加入QQ群，<a
+                                href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=TpEGEOVYpS0swkrm7CoJ9n04oRHZ6pvn&authKey=712H75zzEn6cre14YKMqPWS%2B4kmo8Lfirt2zeXSouHbJmuT4Q208F%2Fx3o0wBVwD5&noverify=0&group_code=670964084">理论计算化学自学答疑:
+                                670964084</a></p>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-网络资源" role="tabpanel" aria-labelledby="网络资源" tabindex="0"></div>
+        <div class="tab-pane fade" id="nav-书籍" role="tabpanel" aria-labelledby="书籍" tabindex="0"></div>
+    </div>
+</body>
+
+<script>
+    const BOOK_DATA = {
+        "网络资源": undefined,
+        "书籍": undefined,
+    };
+
+    const triggerTabList = document.querySelectorAll('button.nav-link');
+    triggerTabList.forEach(triggerEl => {
+        const tabTrigger = new bootstrap.Tab(triggerEl);
+        triggerEl.addEventListener('click', event => {
+            event.preventDefault()
+            let id = triggerEl.id;
+            if (id == "主页") {
+                tabTrigger.show()
+            } else {
+                if(typeof BOOK_DATA[id] == "undefined"){
+                    document.getElementById(`nav-${id}`).innerHTML = `
+                        <div class="d-flex justify-content-center align-middle" style="margin-top: 45%;">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">加载中...</span>
+                            </div>
+                        </div>
+                    `
+                    parse_xml(`./${id}.xml`).then(
+                        (meterial_collection) => {
+                            BOOK_DATA[id] = meterial_collection
+                            document.getElementById(`nav-${id}`).innerHTML = meterial_collection.reduce((p, x) => p + x.to_html(), "")
+                            tabTrigger.show()
+                        }
+                    );
+                }else{
+                    tabTrigger.show()
+                }
+            }
+        });
+    });
+</script>
+
+<script>
+    "use strict";
+
+    function parse_dom(dom, classification) {
+        if (typeof classification == "undefined") {
+            classification = []
+        }
+        switch (dom.localName) {
+            case "分类": {
+                return new 分类(dom, classification)
+            }
+            case "资源": {
+                return new 资源(dom, classification)
+            }
+            case "图书": {
+                return new 图书(dom, classification)
+            }
+            default: {
+                console.error(dom)
+                throw `${dom.localName}, 没有找到该分类`
+            }
+        }
+    }
+
+    class 分类 {
+        名称;
+        注释;
+
+        classification;
+
+        children;
+        child_is_classification;
+
+        constructor(dom, classification) {
+            this.classification = classification.concat([]);
+            this.名称 = dom.getAttribute("名称");
+            this.注释 = dom.getAttribute("注释");
+            this.children = [];
+
+            let new_classification = classification.concat([this.名称]);
+            this.child_is_classification = (dom.children[0].localName == "分类");
+            for (let child of dom.children) {
+                if (this.child_is_classification != (child.localName == "分类")) {
+                    console.error("node\n", dom)
+                    console.error("child\n", child)
+                    throw `分类和${child.localName}定义在同一级\n`
+                }
+                this.children.push(parse_dom(child, new_classification));
+            }
+        }
+
+        to_markdown(offset) {
+            let level = (typeof offset == "undefined" ? 0 : offset) + this.classification.length;
+            let markdown = `${"\#".repeat(level + 1)} ${this.名称}\n\n`;
+            markdown += (this.注释 == null) ? "" : `${this.注释}\n\n`
+            return this.children.reduce((p, x) => p + x.to_markdown(), markdown) + (this.child_is_classification ? "" : "\n")
+        }
+
+        to_html(){
+            let level = (typeof offset == "undefined" ? 0 : offset) + this.classification.length;
+            let html_str = `<h${level + 1}> ${this.名称}</h${level + 1}>`;
+            html_str += (this.注释 == null) ? "" : `<p>${this.注释}</p>`
+            if(this.child_is_classification){
+                return this.children.reduce((p, x) => p + x.to_html(), html_str)
+            }else{
+                return `<ul class="list-group list-group-flush">`
+                        + this.children.reduce((p, x) => p
+                            + `<li class="list-group-item">`
+                            + x.to_html()
+                            + `</li>`, html_str)
+                        + `</ul>`
+            }
+        }
+    }
+
+    class 资源 {
+        名称;
+        网址;
+        注释;
+
+        classification;
+
+        constructor(dom, classification) {
+            this.classification = classification.concat([]);
+            this.名称 = dom.getAttribute("名称");
+            this.网址 = dom.getAttribute("网址");
+            this.注释 = dom.getAttribute("注释");
+
+            
+            let name_null = (this.名称 == null);
+            let url_null = (this.网址 == null);
+            if (name_null && url_null) {
+                console.error(this)
+                throw `名称和网址都没有定义`;
+            }
+
+        }
+
+        to_markdown(offset) {
+            let level = (typeof offset == "undefined" ? 0 : offset) + this.classification.length;
+            let markdown = "";
+
+            if (this.注释 != null) {
+                markdown += `> ${this.注释}\n`;
+            }
+
+            let name_null = (this.名称 == null);
+            let url_null = (this.网址 == null);
+            if (name_null) {
+                markdown += `- ${this.网址}\n`;
+            } else if (url_null) {
+                markdown += `- ${this.名称}\n`;
+            } else {
+                markdown += `- ${this.名称}: ${this.网址}\n`;
+            }
+            return markdown;
+        }
+
+        to_html(){
+            let html_str = "";
+
+            let name_null = (this.名称 == null);
+            let url_null = (this.网址 == null);
+            if (name_null) {
+                html_str += `<p><a href="${this.网址}">${this.网址}</a></p>`;
+            } else if (url_null) {
+                html_str += `<p>${this.名称}</p>`;
+            } else {
+                html_str += `<p>${this.名称}: <a href="${this.网址}">${this.网址}</a></p>`;
+            }
+
+            if (this.注释 != null) {
+                html_str += `<figcaption class="blockquote-footer"><em>${this.注释}</em></figcaption>`;
+            }
+
+            return html_str;
+        }
+    }
+
+    class 图书 {
+        名称;
+        网址;
+        ISBN
+        注释;
+
+        classification;
+
+        constructor(dom, classification) {
+            this.classification = classification.concat([])
+            this.名称 = dom.getAttribute("名称")
+            this.网址 = dom.getAttribute("网址")
+            this.ISBN = dom.getAttribute("ISBN")
+            this.注释 = dom.getAttribute("注释")
+
+            if (this.名称 == null) {
+                console.error(this)
+                throw "没有定义名称"
+            }
+
+            let isbn_null = (this.ISBN == null);
+            let url_null = (this.网址 == null);
+            if (isbn_null && url_null) {
+                console.error(this)
+                throw `网址和ISBN都没有定义`;
+            }
+        }
+
+        to_markdown(offset) {
+            let level = (typeof offset == "undefined" ? 0 : offset) + this.classification.length;
+            let markdown = "";
+
+            if (this.注释 != null) {
+                markdown += `> ${this.注释}\n`;
+            }
+
+            let isbn_null = (this.ISBN == null);
+            let url_null = (this.网址 == null);
+            if (isbn_null) {
+                markdown += `- [${this.名称}](${this.网址})\n`;
+            } else if (url_null) {
+                markdown += `- ${this.名称}: ${this.ISBN}\n`;
+            } else {
+                markdown += `- [${this.名称}](${this.网址}): ${this.ISBN}\n`;
+            }
+            return markdown;
+        }
+
+        to_html(){
+            let html_str = "";
+
+            if (this.注释 != null) {
+                html_str += `> ${this.注释}\n`;
+            }
+
+            let isbn_null = (this.ISBN == null);
+            let url_null = (this.网址 == null);
+            if (isbn_null) {
+                html_str += `<p><a href="${this.网址}">${this.名称}</a></p>`;
+            } else if (url_null) {
+                html_str += `<p>${this.名称}: ${this.ISBN}</p>`;
+            } else {
+                html_str += `<p><a href="${this.网址}">${this.名称}</a>: ${this.ISBN}</p>`;
+            }
+
+            if (this.注释 != null) {
+                html_str += `<figcaption class="blockquote-footer"><em>${this.注释}</em></figcaption>`;
+            }
+
+            return html_str;
+        }
+    }
+
+    async function parse_xml(xml_name) {
+        return fetch(xml_name).then(
+            (response) => response.blob()
+        ).then(
+            (response) => response.text()
+        ).then(
+            (xml_str) => {
+                let domparser = new DOMParser();
+                let doc = domparser.parseFromString(xml_str, "text/xml");
+
+                let meterial_collection = []
+                for (let root of doc.children) {
+                    let node = parse_dom(root);
+                    meterial_collection.push(node);
+                }
+
+                return meterial_collection
+            }
+        )
+    }
+</script>
+
+</html>
